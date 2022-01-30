@@ -4,7 +4,7 @@ services:
   # build a current Ubuntu container
   ubuntu1:
     image: ubuntu
-    command: bash -c "apt-get update && apt-get -y install iputils-ping iproute2 net-tools mtr-tiny nano tcpdump nmap python3-scapy && /bin/bash"
+    command: bash -c "apt-get update && apt-get -y install iputils-ping iproute2 net-tools mtr-tiny nano tcpdump nmap python3-scapy traceroute && /bin/bash"
     container_name: ubuntu1
     tty: true
     cap_add:
@@ -16,7 +16,7 @@ services:
   # build another current Ubuntu container
   ubuntu2:
     image: ubuntu
-    command: bash -c "apt-get update && apt-get -y install iputils-ping iproute2 net-tools mtr-tiny nano tcpdump nmap python3-scapy && /bin/bash"
+    command: bash -c "apt-get update && apt-get -y install iputils-ping iproute2 net-tools mtr-tiny nano tcpdump nmap python3-scapy traceroute && /bin/bash"
     container_name: ubuntu2
     tty: true
     cap_add:
