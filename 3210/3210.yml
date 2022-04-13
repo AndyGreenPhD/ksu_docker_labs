@@ -22,8 +22,8 @@ services:
     cap_add:
         - ALL
     privileged: true
-    networks:
-      net-10:
+    # networks:
+    #  net-10:
 
 networks:
   net-10:
